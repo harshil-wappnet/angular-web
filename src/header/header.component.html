@@ -1,4 +1,4 @@
-<header class="p-2 sm:p-3 h-1/2 bg-white shadow-xl">
+<header class="p-2 sm:p-3 bg-white shadow-xl">
   <div class="flex justify-between items-center w-full">
     <div class="w-1/8">
       <img
@@ -10,12 +10,14 @@
     @if(!toggle){
     <div class="w-1/3 hidden md:block">
       <ul class="flex items-center cursor-pointer justify-between gap-3">
-        <li class="hover:text-[#007bff]">Home</li>
+        <a routerLink=""><li class="hover:text-[#007bff]">Home</li></a>
         <li class="hover:text-[#007bff]">Team</li>
         <li class="hover:text-[#007bff]">Feature</li>
-        <li class="hover:text-[#007bff]">Blog</li>
+        <a routerLink="/blogs"><li class="hover:text-[#007bff]">Blog</li></a>
         <li class="hover:text-[#007bff]">About</li>
-        <li class="hover:text-[#007bff]">Contact</li>
+        <a routerLink="/contact"
+          ><li class="hover:text-[#007bff]">Contact</li></a
+        >
       </ul>
     </div>
     }
